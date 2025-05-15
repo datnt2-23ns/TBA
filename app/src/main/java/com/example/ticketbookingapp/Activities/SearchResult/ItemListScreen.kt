@@ -18,6 +18,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -75,7 +76,7 @@ fun ItemListScreen(
                     .background(color = colorResource(R.color.lightGreyWhite))
                     .padding(top = 36.dp, start = 16.dp, end = 16.dp)
             ) {
-                val (backBtn, headerTitle) = createRefs()
+                val (backBtn, headerTitle, worldImg) = createRefs()
 
                 Image(
                     painter = painterResource(R.drawable.back),
@@ -100,6 +101,17 @@ fun ItemListScreen(
                             start.linkTo(backBtn.end, margin = 8.dp)
                             top.linkTo(backBtn.top)
                             bottom.linkTo(backBtn.bottom)
+                        }
+                )
+
+                Image(
+                    painter = painterResource(R.drawable.world),
+                    colorFilter = ColorFilter.tint(colorResource(R.color.lightBlue)),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .constrainAs(worldImg) {
+                            top.linkTo(parent.top)
+                            start.linkTo(parent.start)
                         }
                 )
             }

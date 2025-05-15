@@ -42,7 +42,7 @@ fun TopSection(
         )
 
         Text(
-            text = "Choose Seats",
+            text = "Chọn ghế ngồi",
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold,
             fontSize = 18.sp,

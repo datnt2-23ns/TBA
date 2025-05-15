@@ -281,7 +281,7 @@ fun TicketDetailContent(
                     fontWeight = FontWeight.Bold
                 )
                 Text(
-                    text = "$${String.format("%.2f", totalPrice)}",
+                    text = "${String.format("%.2f", totalPrice)}" + " VNĐ",
                     color = colorResource(R.color.lightBlue), // Màu lightBlue
                     fontWeight = FontWeight.Normal
                 )

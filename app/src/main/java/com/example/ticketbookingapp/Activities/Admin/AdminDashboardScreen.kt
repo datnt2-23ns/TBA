@@ -40,7 +40,7 @@ fun AdminDashboardScreen(user: UserModel) {
     )
 
     Scaffold(
-        topBar = { TopBar(user = user) }
+        topBar = { TopBar(user = user, title = "Điều phối nhịp bay, tối ưu mọi kết nối.") }
     ) { paddingValues ->
         Box(
             modifier = Modifier
@@ -72,7 +72,7 @@ fun AdminDashboardScreen(user: UserModel) {
                             verticalArrangement = Arrangement.spacedBy(16.dp)
                         ) {
                             Text(
-                                text = "Bảng điều khiển Quản trị",
+                                text = "Bảng điều khiển",
                                 fontSize = 28.sp,
                                 fontWeight = FontWeight.Bold,
                                 color = colorResource(R.color.darkBlue),

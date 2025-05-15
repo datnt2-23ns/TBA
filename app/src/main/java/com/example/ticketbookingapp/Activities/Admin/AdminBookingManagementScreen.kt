@@ -374,7 +374,7 @@ fun BookingItem(bookingWithMetadata: BookingWithMetadata, flight: FlightModel?) 
                     overflow = TextOverflow.Ellipsis
                 )
                 Text(
-                    text = "Giá vé: $${String.format("%.2f", booking.price)}",
+                    text = "Giá vé: ${String.format("%.2f", booking.price)}" + " VNĐ",
                     color = colorResource(R.color.lightBlue),
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,

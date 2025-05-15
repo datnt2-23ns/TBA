@@ -68,7 +68,7 @@ fun BottomSection(
             }
 
             Text(
-                text = "$${String.format("%.2f", totalPrice)}",
+                text = "${String.format("%.2f", totalPrice)}" + " VNĐ",
                 color = colorResource(R.color.lightBlue), // Màu lightBlue
                 fontWeight = FontWeight.SemiBold,
                 fontSize = 25.sp

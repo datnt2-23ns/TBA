@@ -142,7 +142,7 @@ fun FlightItem(
         )
 
         Text(
-            text = "$${String.format("%.2f", flight.Price)}",
+            text = "${String.format("%.2f", flight.Price)}" + " VNĐ",
             fontWeight = FontWeight.SemiBold,
             fontSize = 25.sp,
             color = colorResource(R.color.lightBlue),

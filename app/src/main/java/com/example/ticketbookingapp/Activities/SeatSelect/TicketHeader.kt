@@ -39,7 +39,7 @@ fun TicketDetailHeader(onBackClick: () -> Unit, modifier: Modifier) {
         )
 
         Text(
-            text = "Chọn ghế",
+            text = "Chi tiết vé",
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold,
             fontSize = 18.sp,

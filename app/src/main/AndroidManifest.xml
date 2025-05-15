@@ -28,12 +28,6 @@
             android:name=".Activities.Admin.AdminDashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.Admin.FlightManagement.FlightManagementActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activities.Admin.Dashboard.AdminDashboardActivity"
-            android:exported="false" />
-        <activity
             android:name=".Activities.BookingHistory.BookingHistoryActivity"
             android:exported="false" />
         <activity

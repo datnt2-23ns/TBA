@@ -71,7 +71,7 @@ class SearchResultActivity : AppCompatActivity() {
                 Box(
                     modifier = Modifier
                         .fillMaxSize()
-                        .background(colorResource(R.color.darkPurple2)),
+                        .background(colorResource(R.color.lightBlue)),
                     contentAlignment = Alignment.Center
                 ) {
                     Text(

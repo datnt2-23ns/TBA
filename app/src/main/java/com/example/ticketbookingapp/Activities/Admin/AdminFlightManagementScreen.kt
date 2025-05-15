@@ -1785,7 +1785,7 @@ fun FlightItem(flight: FlightModel, onEdit: () -> Unit, onDelete: () -> Unit) {
                     overflow = TextOverflow.Ellipsis
                 )
                 Text(
-                    text = "Giá: $${String.format("%.2f", flight.Price)}",
+                    text = "Giá: ${String.format("%.2f", flight.Price)}" + " VNĐ",
                     color = colorResource(R.color.lightBlue),
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Bold,
